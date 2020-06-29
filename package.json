@@ -1,0 +1,39 @@
+{
+  "name": "SASS-processor",
+  "version": "1.0.0",
+  "description": "SASS Compiler",
+  "main": "gulpfile.js",
+  "repository": "nn",
+  "author": "ispada",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "pretty": "prettier --write 'src/scss/**/*.scss' --loglevel silent",
+    "style": "prettier-stylelint --write 'src/**/*.{css,scss}' -q",
+    "prettier": "yarn pretty && yarn style"
+  },
+  "devDependencies": {
+    "browserslist": "^4.8.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.1",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-prettier": "^2.3.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "prettier": "^1.19.1",
+    "prettier-stylelint": "^0.4.2",
+    "stylelint": "^13.2.0",
+    "stylelint-order": "^4.0.0",
+    "stylelint-scss": "^3.14.2",
+    "yarn": "^1.22.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  },
+  "browserslist": [
+    "last 10 version"
+  ],
+  "engines": {
+    "node": ">=12"
+  }
+}
